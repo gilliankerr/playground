@@ -1,24 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Chat with AI</title>
-    <link rel="stylesheet" href="owui-widget.css">
-    <style>
-        #chat-widget {
-            width: 400px;
-            height: 600px;
-            margin: 50px auto;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-    </style>
-</head>
-<body>
-    <div id="chat-widget"></div>
-    <script type="module">
-        import ChatWidget, { mount } from './ChatWidget.js';
-        mount(ChatWidget, {
-            target: document.getElementById('chat-widget')
-        });
-    </script>
-</body>
-</html>
+<!-- Add this where you want the chat to appear -->
+This is a test
+<div id="customer-support-chat" style="width: 350px; height: 500px;"></div>
+
+<!-- Add this before closing </body> -->
+<script type="module">
+    import ChatWidget, { mount } from 'https://cdn.example.com/ChatWidget.js';
+    mount(ChatWidget, {
+        target: document.getElementById('customer-support-chat')
+    });
+</script>
